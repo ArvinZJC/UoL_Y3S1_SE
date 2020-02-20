@@ -12,12 +12,12 @@ Except the executable file, the project in this branch should have the same func
 
 1. You can type the command `pip install -r requirements.txt` into the command prompt under the root directory of the project to simplify the pip installation. The requirements are different from the `master` branch.
 2. The project uses [Qt for Python](https://www.qt.io/qt-for-python) to build the UI framework. The command `pyside2-uic -x appMainWindow.ui -o appMainWindow.py` was used to convert the UI file to a PY file.
-3. The command `pyinstaller -F -w -n SpotifyNews -i resources/favicon.ico main.py` was used to generate an [executable file](https://github.com/ArvinZJC/UoL_Y3S1_SE/tree/exe/SpotifyNews/Executable%20File). Please note that the executable file might not work perfectly, since it did not have a thorough test which was not the focus of the assessment.
+3. Before using the command `pyinstaller -F -w -n SpotifyNews -i resources/favicon.ico main.py` to generate an [executable file](https://github.com/ArvinZJC/UoL_Y3S1_SE/tree/exe/SpotifyNews/Executable%20File), **PyInstaller 3.5 needs a modification** to avoid a compatibility issue according to [answers on Stack Overflow](https://stackoverflow.com/questions/53058052/unable-to-find-c-nltk-data-while-creating-executable-using-pyinstaller). Please note that the executable file might not work perfectly, since it did not have a thorough test which was not the focus of the assessment.
 4. Compared to the `master` branch, the project in this branch mainly has the following differences:
 
 * Add the folder "resources" in [Newspaper3k](https://pypi.org/project/newspaper3k/) (package name: newspaper) to the root directory of the project and move the [icon file](https://github.com/ArvinZJC/UoL_Y3S1_SE/tree/exe/SpotifyNews/resources) to the folder.
 * Change the icon path from `'favicon.ico'` to `'resources\\favicon.ico'`. - [main.py](https://github.com/ArvinZJC/UoL_Y3S1_SE/blob/exe/SpotifyNews/main.py)
-* Copy the package "newspaper", rename it as "newspaper3k", and modify some files to solve compatibility issues during the process of generating an executable file. - [settings.py](https://github.com/ArvinZJC/UoL_Y3S1_SE/blob/exe/SpotifyNews/newspaper3k/settings.py) and [utils.py](https://github.com/ArvinZJC/UoL_Y3S1_SE/blob/exe/SpotifyNews/newspaper3k/utils.py)
+* Copy the package "newspaper", rename it as "newspaper3k", and modify some files to avoid compatibility issues during the process of generating an executable file. - [settings.py](https://github.com/ArvinZJC/UoL_Y3S1_SE/blob/exe/SpotifyNews/newspaper3k/settings.py) and [utils.py](https://github.com/ArvinZJC/UoL_Y3S1_SE/blob/exe/SpotifyNews/newspaper3k/utils.py)
 * Use `newspaper3k` instead of `newspaper`. - [keywordExtractor.py](https://github.com/ArvinZJC/UoL_Y3S1_SE/blob/exe/SpotifyNews/keywordExtractor.py)
 
 For more info on the project, turn to the relevant report.
