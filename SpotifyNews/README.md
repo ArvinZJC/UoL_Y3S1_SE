@@ -1,6 +1,6 @@
 # SpotifyNews From the Project UoL_Y3S1_SE
 
-In the `master` branch, this project is named as **Spotify News** which can generate track recommendations from Spotify based on keywords extracted from that day's news pulled from [News API](https://newsapi.org/). It is developed by **Team 2** as Assessment 1 of the course **Software Engineering** during Semester 1 of Year 3 in UoL. It must be admitted that there are many things to optimise, such as the log format and the performance. However, since the major aim of the assessment is to better understand the Agile methodology SCRUM and to produce standard documentation, it does not really matter whether the application is perfect or not.
+In the master branch, this project is named as **Spotify News** which can generate track recommendations from Spotify based on keywords extracted from that day's news pulled from [News API](https://newsapi.org/). It is developed by **Team 2** as Assessment 1 of the course **Software Engineering** during Semester 1 of Year 3 in UoL. It must be admitted that there are many things to optimise, such as the log format and the performance. However, since the major aim of the assessment is to better understand the Agile methodology SCRUM and to produce standard documentation, it does not really matter whether the application is perfect or not.
 
 ## About Team 2
 
