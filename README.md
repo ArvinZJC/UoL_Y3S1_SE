@@ -4,4 +4,4 @@ This repository contains code written for practising the knowledge gained from t
 
 ## ATTENTION
 
-1. By 18 February 2020, everything looks good with VS Code + Python 3.7.5.
+1. By 18 February 2020, everything looks good with VS Code + Python 3.7.6.
